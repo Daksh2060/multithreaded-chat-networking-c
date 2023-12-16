@@ -1,24 +1,5 @@
 # Multithreaded Network Chat in C
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-   - [Features](#features)
-   - [Why UDP?](#why-udp)
-   - [Message Flow Management](#message-flow-management)
-     - [Incoming Message List](#incoming-message-list)
-     - [Outgoing Message List](#outgoing-message-list)
-     - [Process Diagram](#process-diagram)
-2. [Installation and Use](#installation-and-use)
-   - [Clone Repository](#1-clone-the-repository-to-your-local-machine)
-   - [Compile Source Code](#2-compile-the-source-code-using-makefile-recommended-in-wsl)
-   - [Test the Chat App](#3-to-test-by-yourself-open-2-terminals-in-the-first-terminal-run-the-following-command)
-   - [Send Messages](#5-you-can-now-send-messages-between-the-two-terminals)
-   - [Terminate the Chat](#6-to-terminate-the-chat-one-user-must-send-a-and-both-users-will-exit)
-3. [Contact](#contact)
-
-## Introduction
-
 Welcome to the Multithreaded Network Chat project! This application is an efficient chat app built using C, featuring multithreading and UDP sockets for responsive networking. The primary goal of this project is to demonstrate concepts in network programming within a multithreaded environment, showcasing a seamless peer-to-peer chat experience.
 
 ## Features
