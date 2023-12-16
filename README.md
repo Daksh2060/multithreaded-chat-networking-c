@@ -88,6 +88,7 @@ Follow these steps to set up and run the UDP Multithreaded Chat Networking in C:
 6. To terminate the chat, one user must send a "!", and both users will exit:
    ```bash
    !
+   < Chat Has Been Ended >
    ```
 
 ## Contact
