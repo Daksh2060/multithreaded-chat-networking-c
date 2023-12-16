@@ -74,9 +74,21 @@ Follow these steps to set up and run the UDP Multithreaded Chat Networking in C:
    ./chat 7000 localhost 6000
    ```
 
-   Now, the UDP Multithreaded Chat Networking in C is set up and ready to use.
+5. You can now send messages between the two terminals:
+   User 1 Terminal:
 
-5. To terminate the chat, one user must send a "!", and both users will exit:
+   ```bash
+   Hello
+   ```
+
+   User 2 Terminal:
+
+   ```bash
+   Received > Hello
+   Hi
+   ```
+
+6. To terminate the chat, one user must send a "!", and both users will exit:
    ```bash
    !
    ```
