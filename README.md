@@ -36,7 +36,7 @@ By employing this dual-list system, the program enables real-time communication 
 
 ## Installation and Use
 
-Follow these steps to set up and run the UDP Multithreaded Chat Networking in C:
+Follow these steps to set up and run the Multithreaded Network Chat in C:
 
 1. Clone the repository to your local machine.
 
