@@ -96,4 +96,4 @@ Follow these steps to set up and run the UDP Multithreaded Chat Networking in C:
 Feel free to reach out if you have any questions, suggestions, or feedback:
 
 - **Email:** dpa45@sfu.ca
-- **Twitter:** [@Daksh Patel](https://www.linkedin.com/in/daksh-patel-956622290/)
+- **LinkedIn:** [@Daksh Patel](https://www.linkedin.com/in/daksh-patel-956622290/)
