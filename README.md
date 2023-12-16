@@ -77,7 +77,7 @@ Follow these steps to set up and run the Multithreaded Network Chat in C:
 5. You can now send messages between the two terminals:
 
    ```bash
-   Hello
+   Hell
    ```
 
    ```bash
