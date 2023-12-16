@@ -1,7 +1,7 @@
-all: s-talk
+all: chat
 
-s-talk: 
-	gcc -g -Wall -Wextra s-talk.c list.h list.o -o s-talk -lpthread
+chat: 
+	gcc -g -Wall -Wextra chat.c list.h list.o -o chat -lpthread
 
 clean:
-	rm -f s-talk
+	rm -f chat
