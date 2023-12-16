@@ -6,11 +6,11 @@ Welcome to the Multithreaded Network Chat project! This application is an effici
 
 - **Multithreaded Architecture:** The application employs kernel level p-threads to handle concurrent tasks efficiently. Each thread is dedicated to specific responsibilities, such as keyboard input handling, UDP message exchange, and real-time message display.
 
-- **Efficient Networking with UDP:** UDP is utilized to ensure efficient and low-latency communication between peers. This choice of protocol is particularly suitable for real-time applications, providing a streamlined and responsive chat experience.
+- **Efficient Networking with UDP:** UDP is utilized to ensure efficient and low-latency communication between peers which is ideal suitable for real-time applications.
 
-- **Threaded Keyboard Input Handling:** The application efficiently manages keyboard input using threads, allowing users to interact with the chat system seamlessly. This design ensures that input processing does not hinder other aspects of the application.
+- **Threaded Keyboard Input Handling:** The application manages keyboard input using threads, allowing users to interact with the chat system while receiving messages. This design ensures that message processing does not interupt other aspects of the application.
 
-- **Real-time Message Display:** Messages are displayed in real-time, providing users with an immersive chat experience. The multithreaded design allows for simultaneous message sending and receiving, making the conversation flow smoothly.
+- **Real-time Message Display:** Messages are displayed in real-time, providing a realistic chat experience. The multithreaded design allows for simultaneous message sending and receiving, making the conversation flow smoothly.
 
 ## Why UDP?
 
@@ -22,15 +22,17 @@ The core of this chat application lies in its ability to seamlessly handle both 
 
 ### Incoming Message List
 
-The program maintains a dynamic list to track and process incoming messages from other users. Each message is decoded and added to this list, allowing the application to handle multiple simultaneous messages concurrently. The multithreaded design ensures that incoming messages are promptly processed without disrupting the overall chat experience.
+The program maintains a dynamic list to track and process incoming messages from other users. Each message is decoded and added to this list, allowing the application to handle multiple simultaneous messages concurrently.
 
 ### Outgoing Message List
 
-The program also utilizes a separate list to manage outgoing messages. When a user sends a message, it is added to this list, ready to be transmitted to the peer. The threaded architecture ensures that outgoing messages do not interfere with the reception and processing of incoming messages, maintaining a smooth and responsive chat environment.
+The program also utilizes a separate list to manage outgoing messages. When a user sends a message, it is added to this list, ready to be transmitted to the peer.
 
-By employing this dual-list system, the UDP Multithreaded Chat Networking in C maximizes efficiency, enabling real-time communication while preserving the integrity of message flow.
+### Process Diagram
 
 ![UDP Process Graph](images/proccess_diagram.png)
+
+By employing this dual-list system, the program enables real-time communication while preserving the integrity of message flow. The multithreaded design ensures that incoming and outgoing messages are processed without disrupting the overall chat experience.
 
 ## Getting Started
 
@@ -72,7 +74,12 @@ Follow these steps to set up and run the UDP Multithreaded Chat Networking in C:
    ./chat 7000 localhost 6000
    ```
 
-Now, the UDP Multithreaded Chat Networking in C is set up and ready to use.
+   Now, the UDP Multithreaded Chat Networking in C is set up and ready to use.
+
+5. To terminate the chat, one user must send a "!", and both users will exit:
+   ```bash
+   !
+   ```
 
 ## Contact
 
