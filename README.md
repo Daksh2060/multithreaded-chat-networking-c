@@ -50,13 +50,13 @@ Follow these steps to set up and run the Multithreaded Network Chat in C:
    make
    ```
 
-3. To test by yourself, open 2 terminals, in the first terminal run the following command:
+3. To run, open two terminals, in the first terminal run the following command:
 
    ```bash
-   ./chat [user1_port_number] localhost [user2_port_number]
+   ./chat [user1_port_number] [user2_machine_name] [user2_port_number]
    ```
 
-   For example:
+   For example, if testing by yourself:
 
    ```bash
    ./chat 6000 localhost 7000
@@ -65,10 +65,10 @@ Follow these steps to set up and run the Multithreaded Network Chat in C:
 4. In the second terminal, run the following command:
 
    ```bash
-   ./chat_app [user2_port_number] localhost [user1_port_number]
+   ./chat_app [user2_port_number] [user1_machine_name] [user1_port_number]
    ```
 
-   For example:
+   For example, if testing by yourself:
 
    ```bash
    ./chat 7000 localhost 6000
