@@ -75,13 +75,10 @@ Follow these steps to set up and run the UDP Multithreaded Chat Networking in C:
    ```
 
 5. You can now send messages between the two terminals:
-   User 1 Terminal:
 
    ```bash
    Hello
    ```
-
-   User 2 Terminal:
 
    ```bash
    Received > Hello
