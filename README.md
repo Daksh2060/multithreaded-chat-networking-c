@@ -38,7 +38,7 @@ By employing this dual-list system, the program enables real-time communication 
 
 Follow these steps to set up and run the Multithreaded Network Chat in C:
 
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine:
 
    ```bash
    git clone https://github.com/your_username/multithreaded-chat-networking-c.git
