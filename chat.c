@@ -37,13 +37,10 @@ pthread_cond_t receivedCond = PTHREAD_COND_INITIALIZER;
 // Boolean to control the main loop
 bool cont = true;
 
-/**
- * @brief Thread function to handle keyboard input.
- *
- * This function reads keyboard input, processes it, and adds it to the ToBeSent list.
- *
- * @return NULL
- */
+/*
+ Thread function to handle keyboard input.
+ Thread reads keyboard input, processes it, and adds it to the ToBeSent list.
+*/
 void *keyInputThread()
 {
     // Set non-blocking input for keyboard
@@ -122,13 +119,10 @@ void *UDPOutputThread()
     return NULL;
 }
 
-/**
- * @brief Thread function to handle receiving messages over UDP.
- *
- * This function continuously receives messages over UDP and adds them to the Received list.
- *
- * @return NULL
- */
+/*
+ Thread function to handle receiving messages over UDP.
+ This function continuously receives messages over UDP and adds them to the Received list.
+*/
 void *UDPInputThread()
 {
     char input[MAX_BUFFER_SIZE];
@@ -174,13 +168,10 @@ void *UDPInputThread()
     return NULL;
 }
 
-/**
- * @brief Thread function to handle displaying received messages on the screen.
- *
- * This function continuously checks the Received list and prints messages to the screen.
- *
- * @return NULL
- */
+/*
+ Thread function to handle displaying received messages on the screen.
+ This function continuously checks the Received list and prints messages to the screen.
+*/
 void *screenOutputThread()
 {
     while (cont)
@@ -216,13 +207,10 @@ void *screenOutputThread()
     return NULL;
 }
 
-/**
- * @brief Function to free memory for list items.
- *
- * This function is a callback used by the List_free function.
- *
- * @param pItem Pointer to the item to be freed.
- */
+/*
+ Function to free memory for list items.
+ This function is used as a callback by the List_free function.
+*/
 void pItemFreeFn(void *pItem)
 {
     if (pItem)
@@ -231,15 +219,10 @@ void pItemFreeFn(void *pItem)
     }
 }
 
-/**
- * @brief Main function.
- *
- * This function initializes the program, sets up sockets, creates threads, and manages their lifecycle.
- *
- * @param argc Number of command-line arguments.
- * @param argv Array of command-line arguments.
- * @return 0 on successful execution.
- */
+/*
+ main initializes the program, sets up sockets, creates threads, and manages their lifecycle.
+ return 0 on successful execution.
+*/
 int main(int argc, char *argv[])
 {
     // Initialize lists
