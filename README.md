@@ -88,7 +88,7 @@ Follow these steps to set up and run the Multithreaded Network Chat in C:
 6. To terminate the chat, one user must send a "!", and both users will exit:
    ```bash
    !
-   >< Chat Has Been Ended >
+   < Chat Has Been Ended >
    ```
 
 ## Contact
