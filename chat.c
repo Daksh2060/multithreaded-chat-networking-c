@@ -85,13 +85,10 @@ void *keyInputThread()
     return NULL;
 }
 
-/**
- * @brief Thread function to handle sending messages over UDP.
- *
- * This function continuously checks the ToBeSent list and sends messages over UDP.
- *
- * @return NULL
- */
+/*
+ Thread function to handle sending messages over UDP.
+ This function continuously checks the ToBeSent list and sends messages over UDP.
+*/
 void *UDPOutputThread()
 {
     while (cont)
