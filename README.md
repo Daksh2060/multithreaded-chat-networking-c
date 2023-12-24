@@ -40,53 +40,53 @@ Follow these steps to set up and run the Multithreaded Network Chat in C:
 
 1. Clone the repository to your local machine:
 
-   ```cpp
+   ```bash
    git clone https://github.com/Daksh2060/multithreaded-chat-networking-c.git
    ```
 
 2. Compile the source code using makefile (recommended in WSL):
 
-   ```cpp
+   ```bash
    make
    ```
 
 3. To run, open two terminals, in the first terminal run the following command:
 
-   ```cpp
+   ```bash
    ./chat [user1_port_number] [user2_machine_name] [user2_port_number]
    ```
 
    For example, if testing by yourself:
 
-   ```cpp
+   ```bash
    ./chat 6000 localhost 7000
    ```
 
 4. In the second terminal, run the following command:
 
-   ```cpp
+   ```bash
    ./chat_app [user2_port_number] [user1_machine_name] [user1_port_number]
    ```
 
    For example, if testing by yourself:
 
-   ```cpp
+   ```bash
    ./chat 7000 localhost 6000
    ```
 
 5. You can now send messages between the two terminals:
 
-   ```cpp
+   ```bash
    Hello
    ```
 
-   ```cpp
+   ```bash
    Received > Hello
    Hi
    ```
 
 6. To terminate the chat, one user must send a "!", and both users will exit:
-   ```cpp
+   ```bash
    !
    < Chat Has Been Ended >
    ```
