@@ -70,7 +70,7 @@ Follow these steps to set up and run the Multithreaded Network Chat in C:
 
    For example, if testing by yourself:
 
-   ```bash
+   ```cpp
    ./chat 7000 localhost 6000
    ```
 
